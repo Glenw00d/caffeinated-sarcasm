@@ -87,9 +87,15 @@ export default function Home() {
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-lg text-center md:col-span-2">
-            <h2 className="font-bold text-2xl">Printify</h2>
+            <h2 className="font-bold text-2xl">Printify / Etsy</h2>
             <p>More sarcastic merch — coming soon!</p>
-            <p className="text-gray-400 mt-2">Coming Soon</p>
+            <a
+              href="https://www.etsy.com/shop/CaffeinatedSarcasmCo"
+              target="_blank"
+              className="mt-3 inline-block px-6 py-2 bg-yellow-300 hover:bg-yellow-400 text-brown-900 font-semibold rounded"
+            >
+              Visit Etsy Shop
+            </a>
           </div>
         </div>
 
