@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         brown: {
-          900: '#422006', // használt szín az oldaladhoz
+          900: '#422006', // 
         },
       },
       fontFamily: {
