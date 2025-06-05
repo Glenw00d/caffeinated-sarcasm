@@ -29,13 +29,13 @@ export default function Home() {
           <p className="text-2xl mt-2 font-semibold tracking-wide">COFFEE. SARCASM. REPEAT.</p>
 
           <div className="flex justify-center mt-4 space-x-6 text-3xl">
-            <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.tiktok.com/@caffeinated_sarcasm_co" target="_blank" rel="noopener noreferrer">
               <FaTiktok className="hover:text-pink-600 transition-colors" />
             </a>
-            <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/channel/UCbutJWboiMFd60QDP3ykbMA" target="_blank" rel="noopener noreferrer">
               <FaYoutube className="hover:text-red-600 transition-colors" />
             </a>
-            <a href="https://www.pinterest.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://pin.it/5aKUMLScS" target="_blank" rel="noopener noreferrer">
               <FaPinterest className="hover:text-red-500 transition-colors" />
             </a>
           </div>
