@@ -28,6 +28,8 @@ export default function Home() {
           <h1 className="text-5xl font-bold">Funny Quotes for Tired People</h1>
           <p className="text-2xl mt-2 font-semibold tracking-wide">COFFEE. SARCASM. REPEAT.</p>
 
+          <p className="text-lg mt-2 font-bold">Caffeinated Sarcasm Co.</p>
+
           <div className="flex justify-center mt-4 space-x-6 text-3xl">
             <a href="https://www.tiktok.com/@caffeinated_sarcasm_co" target="_blank" rel="noopener noreferrer">
               <FaTiktok className="hover:text-pink-600 transition-colors" />
