@@ -52,7 +52,7 @@ export default function Home() {
             <h2 className="font-bold text-2xl">Redbubble Shop</h2>
             <p className="mt-1">Funny & bold POD designs available on Redbubble</p>
             <a
-              href="https://www.redbubble.com/people/YOURSHOP"
+              href="https://www.redbubble.com/people/Sarkadib/shop?ref=account-nav-dropdown"
               target="_blank"
               className="mt-3 inline-block px-6 py-2 bg-yellow-300 hover:bg-yellow-400 text-brown-900 font-semibold rounded"
             >
@@ -64,7 +64,7 @@ export default function Home() {
             <h2 className="font-bold text-2xl">TeePublic Store</h2>
             <p className="mt-1">Explore hilarious tees and more on TeePublic</p>
             <a
-              href="https://www.teepublic.com/user/YOURSHOP"
+              href="https://www.teepublic.com/user/caffeinated-sarcasm-co"
               target="_blank"
               className="mt-3 inline-block px-6 py-2 bg-yellow-300 hover:bg-yellow-400 text-brown-900 font-semibold rounded"
             >
