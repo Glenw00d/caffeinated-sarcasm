@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -6,5 +7,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [], // ← EZ NAGYON FONTOS! LEGYEN ÜRES TÖMB, HA NINCS PLUGIN
-}
+  plugins: [], // legyen üres tömb
+};
