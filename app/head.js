@@ -12,10 +12,7 @@ export default function Head() {
       <meta property="og:image" content="/images/angry-coffee-cup.png" />
       <meta property="og:url" content="https://caffeinated-sarcasm.vercel.app/" />
       <meta name="twitter:card" content="summary_large_image" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap"
-        rel="stylesheet"
-      />
+      <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet" />
     </>
   );
 }
