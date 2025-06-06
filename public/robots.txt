@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://caffeinated-sarcasm.vercel.app/sitemap.xml
