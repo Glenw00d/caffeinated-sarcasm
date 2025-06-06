@@ -1,22 +1,20 @@
 export async function GET() {
-  const externalLinks = [
-    'https://caffeinated-sarcasm.vercel.app',
-    'https://www.redbubble.com/people/Sarkadib/shop?asc=u&ref=account-nav-dropdown',
-    'https://www.teepublic.com/user/caffeinated-sarcasm-co',
-    'https://www.etsy.com/shop/CaffeinatedSarcasmCo',
-  ];
+  const baseUrl = 'https://caffeinated-sarcasm.vercel.app';
 
-  // Biztonságos XML escape
-  const escapeXml = (unsafe) =>
-    unsafe.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const internalRoutes = [
+    '',            // főoldal
+    'redbubble',   // saját belső oldal
+    'teepublic',   // saját belső oldal
+    'etsy'         // saját belső oldal
+  ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${externalLinks
+  ${internalRoutes
     .map(
-      (url) => `
+      (path) => `
     <url>
-      <loc>${escapeXml(url)}</loc>
+      <loc>${baseUrl}/${path}</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>`
