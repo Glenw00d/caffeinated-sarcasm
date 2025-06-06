@@ -6,13 +6,17 @@ export async function GET() {
     'https://www.etsy.com/shop/CaffeinatedSarcasmCo',
   ];
 
+  // Biztonságos XML escape
+  const escapeXml = (unsafe) =>
+    unsafe.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${externalLinks
     .map(
       (url) => `
     <url>
-      <loc>${url}</loc>
+      <loc>${escapeXml(url)}</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>`
