@@ -1,21 +1,18 @@
-
 export async function GET() {
-  const baseUrl = 'https://caffeinated-sarcasm.vercel.app';
-
-  const staticPages = [
-    '',                  // főoldal
-    'redbubble',         // redbubble oldal
-    'teepublic',         // teepublic oldal
-    'etsy',              // etsy oldal
+  const externalLinks = [
+    'https://caffeinated-sarcasm.vercel.app',
+    'https://www.redbubble.com/people/Sarkadib/shop?asc=u&ref=account-nav-dropdown',
+    'https://www.teepublic.com/user/caffeinated-sarcasm-co',
+    'https://www.etsy.com/shop/CaffeinatedSarcasmCo',
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${staticPages
+  ${externalLinks
     .map(
-      (page) => `
+      (url) => `
     <url>
-      <loc>${baseUrl}/${page}</loc>
+      <loc>${url}</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>`
