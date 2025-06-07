@@ -1,13 +1,11 @@
 'use client';
 import './globals.css';
 import Image from 'next/image';
-import { FaTiktok, FaYoutube, FaPinterest } from 'react-icons/fa';
+import { FaTiktok, FaYoutube, FaPinterest, FaInstagram } from 'react-icons/fa'; // ← Instagram ikon importálása
 
 export default function Home() {
   return (
     <>
-      
-
       <div className="bg-gradient-to-b from-yellow-200 to-yellow-100 text-brown-900 font-['Comic_Neue'] min-h-screen">
         <div className="text-center py-10 px-4">
           <Image
@@ -32,6 +30,9 @@ export default function Home() {
             </a>
             <a href="https://pin.it/5aKUMLScS" target="_blank" rel="noopener noreferrer">
               <FaPinterest className="hover:text-red-500 transition-colors" />
+            </a>
+            <a href="https://www.instagram.com/caffeinatedsarcasmco/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="hover:text-purple-500 transition-colors" />
             </a>
           </div>
 
