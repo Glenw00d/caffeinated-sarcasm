@@ -1,12 +1,19 @@
 'use client';
 import './globals.css';
 import Image from 'next/image';
-import { FaTiktok, FaYoutube, FaPinterest, FaInstagram } from 'react-icons/fa'; // ← Instagram ikon importálása
+import Link from 'next/link';
+import { FaTiktok, FaYoutube, FaPinterest, FaInstagram } from 'react-icons/fa';
 
 export default function Home() {
   return (
     <>
       <div className="bg-gradient-to-b from-yellow-200 to-yellow-100 text-brown-900 font-['Comic_Neue'] min-h-screen">
+        <nav className="flex justify-center space-x-6 py-4 text-lg font-bold">
+          <Link href="/" className="hover:text-yellow-600">Home</Link>
+          <Link href="/designs" className="hover:text-yellow-600">Designs</Link>
+          <Link href="/about" className="hover:text-yellow-600">About</Link>
+        </nav>
+
         <div className="text-center py-10 px-4">
           <Image
             src="/images/angry-coffee-cup.png"
