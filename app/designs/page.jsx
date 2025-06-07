@@ -1,14 +1,24 @@
 'use client';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function DesignsPage() {
-  const designImages = [
-    '/designs/404-errormotivation.png',
-    '/designs/introvert-charging.png',
-    '/designs/mentally-at-home.png',
-    // További képeket ide vehetsz fel
-  ];
+  const [designImages, setDesignImages] = useState([]);
+
+  useEffect(() => {
+    async function fetchImages() {
+      try {
+        const response = await fetch('/api/designs');
+        const data = await response.json();
+        setDesignImages(data);
+      } catch (error) {
+        console.error('Failed to load designs:', error);
+      }
+    }
+
+    fetchImages();
+  }, []);
 
   return (
     <div className="p-10 text-center min-h-screen bg-yellow-100 text-brown-900 font-['Comic_Neue']">
