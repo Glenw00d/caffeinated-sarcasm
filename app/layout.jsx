@@ -8,7 +8,7 @@ export const metadata = {
   keywords: 'funny quotes, sarcastic gifts, coffee lovers, snarky merch, t-shirts, coloring books, Etsy, Redbubble, TeePublic',
   authors: [{ name: 'Caffeinated Sarcasm Co.' }],
   verification: {
-    google: 'IaexImF9uk3mQ7RtfOnnEw8L6IwbopIlC5nDLQAae44', // 👈 Google Search Console meta tag
+    google: 'IaexImF9uk3mQ7RtfOnnEw8L6IwbopIlC5nDLQAae44',
   },
   openGraph: {
     title: 'Caffeinated Sarcasm Co.',
@@ -25,6 +25,12 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+  },
+  other: {
+    'instagram:site': 'https://www.instagram.com/caffeinatedsarcasmco/',
+    'tiktok:site': 'https://www.tiktok.com/@caffeinated_sarcasm_co',
+    'pinterest:site': 'https://pin.it/5aKUMLScS',
+    'youtube:channel': 'https://www.youtube.com/channel/UCbutJWboiMFd60QDP3ykbMA',
   },
 };
 
