@@ -1,43 +1,33 @@
 'use client';
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function DesignsPage() {
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const imageUrl = URL.createObjectURL(file);
-      setSelectedImage(imageUrl);
-    }
-  };
+  const designImages = [
+    '/designs/404-errormotivation.png',
+    '/designs/introvert-charging.png',
+    '/designs/mentally-at-home.png',
+    // További képeket ide vehetsz fel
+  ];
 
   return (
     <div className="p-10 text-center min-h-screen bg-yellow-100 text-brown-900 font-['Comic_Neue']">
       <h1 className="text-4xl font-bold mb-4">My Designs</h1>
-      <p className="text-lg mb-6">Upload and preview your design files below.</p>
+      <p className="text-lg mb-6">Here are some of our current design pieces:</p>
 
-      <input
-        type="file"
-        accept="image/*"
-        onChange={handleImageChange}
-        className="mb-4"
-      />
-
-      {selectedImage && (
-        <div className="mt-4">
-          <p className="font-semibold mb-2">Preview:</p>
-          <Image
-            src={selectedImage}
-            alt="Uploaded design preview"
-            width={300}
-            height={300}
-            className="mx-auto rounded shadow-lg"
-          />
-        </div>
-      )}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {designImages.map((src, index) => (
+          <div key={index} className="bg-white p-4 rounded-xl shadow-md">
+            <Image
+              src={src}
+              alt={`Design ${index + 1}`}
+              width={300}
+              height={300}
+              className="mx-auto rounded"
+            />
+          </div>
+        ))}
+      </div>
 
       <div className="mt-10">
         <Link href="/">
